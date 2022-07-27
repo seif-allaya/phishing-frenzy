@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.7'
+gem 'rails', '5.2.8.1'
 
 gem 'mysql2'
 gem 'sass-rails'
@@ -18,7 +18,7 @@ gem 'protected_attributes'
 gem 'devise'
 
 # For login tracking
-gem 'paper_trail', '>= 3.0.0.rc2'
+gem 'paper_trail', '>= 4.0.0'
 
 # For background work (sending emails)
 gem 'sidekiq'
