@@ -1,28 +1,28 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.7'
+gem 'rails', '5.2.8.1'
 
 gem 'mysql2'
-gem 'sass-rails'
-gem 'coffee-rails'
+gem 'sass-rails', '>= 5.0.5'
+gem 'coffee-rails', '>= 4.2.2'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', :platforms => :ruby
 
 # core rails helpers
-gem 'uglifier'
-gem 'jquery-rails'
+gem 'uglifier', '>= 2.7.2'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'protected_attributes'
 
 # TO use devise for authentication
-gem 'devise'
+gem 'devise', '>= 4.7.1'
 
 # For login tracking
-gem 'paper_trail', '>= 3.0.0.rc2'
+gem 'paper_trail', '>= 4.0.0'
 
 # For background work (sending emails)
-gem 'sidekiq'
-gem 'sinatra', '>= 1.3.0', :require => nil
+gem 'sidekiq', '>= 6.2.1'
+gem 'sinatra', '>= 2.2.0', :require => nil
 
 # For email previewing
 gem 'letter_opener_web'
@@ -34,17 +34,17 @@ gem 'googlecharts'
 gem 'geokit'
 
 # To use jquery ui
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '>= 6.0.0'
 
 # To use rubyzip
-gem 'rubyzip', "~>1.0.0"
+gem 'rubyzip', '~> 1.3.0'
 
 # To use pry for debugging
 gem 'pry'
 gem 'pry-nav'
 
 # To assist with pagination
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.1'
 gem 'bootstrap-kaminari-views'
 
 # To determine binary files
@@ -58,7 +58,7 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git', :branch => 'bootstrap3'
 
 # For uploading email attacments
-gem 'carrierwave'
+gem 'carrierwave', '>= 1.3.2'
 
 # For multiple attachments
 gem 'nested_form'
@@ -78,17 +78,17 @@ gem 'searchbing'
 gem 'open_uri_redirections'
 
 # site cloning
-gem 'mechanize'
+gem 'mechanize', '>= 2.8.5'
 
 # Gem for xlsx creation
 gem 'acts_as_xlsx'
 gem 'axlsx'
 
 # code syntax highlighter
-gem 'codemirror-rails'
+gem 'codemirror-rails', '>= 5.11.1'
 
 # our test suite
-gem "rspec-rails", :group => [:test, :development]
+gem "rspec-rails", ">= 3.5.0", :group => [:test, :development]
 group :test do
   gem "factory_girl_rails"
   gem "capybara"
@@ -98,7 +98,7 @@ group :test do
 end
 
 # ruby code style checker
-gem 'rubocop'
+gem 'rubocop', '>= 0.49.0'
 
 # optimize queries
 gem "bullet", :group => "development"
@@ -109,7 +109,7 @@ gem 'public_activity'
 gem 'file-tail'
 
 # decorators
-gem 'draper', '~> 1.3'
+gem 'draper', '~> 1.3', '>= 1.3.0'
 
 # foreman helper
 gem 'foreman'
