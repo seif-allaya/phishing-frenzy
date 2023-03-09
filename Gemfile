@@ -1,28 +1,28 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.7'
+gem 'rails', '5.0.0'
 
 gem 'mysql2'
-gem 'sass-rails'
-gem 'coffee-rails'
+gem 'sass-rails', '>= 5.0.5'
+gem 'coffee-rails', '>= 4.1.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', :platforms => :ruby
 
 # core rails helpers
 gem 'uglifier'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'protected_attributes'
 
 # TO use devise for authentication
-gem 'devise'
+gem 'devise', '>= 4.0.0'
 
 # For login tracking
 gem 'paper_trail', '>= 3.0.0.rc2'
 
 # For background work (sending emails)
 gem 'sidekiq'
-gem 'sinatra', '>= 1.3.0', :require => nil
+gem 'sinatra', '>= 2.0.0', :require => nil
 
 # For email previewing
 gem 'letter_opener_web'
@@ -85,10 +85,10 @@ gem 'acts_as_xlsx'
 gem 'axlsx'
 
 # code syntax highlighter
-gem 'codemirror-rails'
+gem 'codemirror-rails', '>= 5.11.1'
 
 # our test suite
-gem "rspec-rails", :group => [:test, :development]
+gem "rspec-rails", ">= 3.5.0", :group => [:test, :development]
 group :test do
   gem "factory_girl_rails"
   gem "capybara"
@@ -109,7 +109,7 @@ gem 'public_activity'
 gem 'file-tail'
 
 # decorators
-gem 'draper', '~> 1.3'
+gem 'draper', '~> 1.3', '>= 1.3.0'
 
 # foreman helper
 gem 'foreman'
