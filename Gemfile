@@ -21,7 +21,7 @@ gem 'devise'
 gem 'paper_trail', '>= 3.0.0.rc2'
 
 # For background work (sending emails)
-gem 'sidekiq'
+gem 'sidekiq', '>= 7.1.3'
 gem 'sinatra', '>= 1.3.0', :require => nil
 
 # For email previewing
