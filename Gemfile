@@ -22,7 +22,7 @@ gem 'paper_trail', '>= 3.0.0.rc2'
 
 # For background work (sending emails)
 gem 'sidekiq'
-gem 'sinatra', '>= 1.3.0', :require => nil
+gem 'sinatra', '>= 4.0.0', :require => nil
 
 # For email previewing
 gem 'letter_opener_web'
