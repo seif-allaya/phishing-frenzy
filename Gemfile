@@ -88,7 +88,7 @@ gem 'axlsx'
 gem 'codemirror-rails'
 
 # our test suite
-gem "rspec-rails", :group => [:test, :development]
+gem "rspec-rails", ">= 8.0.0", :group => [:test, :development]
 group :test do
   gem "factory_girl_rails"
   gem "capybara"
