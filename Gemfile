@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.7'
+gem 'rails', '7.0.0'
 
 gem 'mysql2'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'coffee-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -22,7 +22,7 @@ gem 'paper_trail', '>= 3.0.0.rc2'
 
 # For background work (sending emails)
 gem 'sidekiq'
-gem 'sinatra', '>= 1.3.0', :require => nil
+gem 'sinatra', '>= 4.0.0', :require => nil
 
 # For email previewing
 gem 'letter_opener_web'
@@ -44,7 +44,7 @@ gem 'pry'
 gem 'pry-nav'
 
 # To assist with pagination
-gem 'kaminari'
+gem 'kaminari', '>= 1.0.0'
 gem 'bootstrap-kaminari-views'
 
 # To determine binary files
