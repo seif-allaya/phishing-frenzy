@@ -1,21 +1,21 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.7'
+gem 'rails', '4.1.7.1'
 
 gem 'mysql2'
-gem 'sass-rails'
-gem 'coffee-rails'
+gem 'sass-rails', '>= 5.0.4'
+gem 'coffee-rails', '>= 4.1.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', :platforms => :ruby
 
 # core rails helpers
 gem 'uglifier'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.3'
 gem 'protected_attributes'
 
 # TO use devise for authentication
-gem 'devise'
+gem 'devise', '>= 3.5.1'
 
 # For login tracking
 gem 'paper_trail', '>= 3.0.0.rc2'
@@ -25,7 +25,7 @@ gem 'sidekiq'
 gem 'sinatra', '>= 1.3.0', :require => nil
 
 # For email previewing
-gem 'letter_opener_web'
+gem 'letter_opener_web', '>= 1.3.1'
 
 # To use google charts
 gem 'googlecharts'
@@ -34,7 +34,7 @@ gem 'googlecharts'
 gem 'geokit'
 
 # To use jquery ui
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '>= 5.0.4'
 
 # To use rubyzip
 gem 'rubyzip', "~>1.0.0"
@@ -64,10 +64,10 @@ gem 'carrierwave'
 gem 'nested_form'
 
 # datatables
-gem 'jquery-datatables-rails'
+gem 'jquery-datatables-rails', '>= 3.3.0'
 
 # d3 reports
-gem 'd3-rails'
+gem 'd3-rails', '>= 3.5.6'
 
 # pdf creation
 gem 'prawn', '~> 1.2.1'
@@ -78,21 +78,21 @@ gem 'searchbing'
 gem 'open_uri_redirections'
 
 # site cloning
-gem 'mechanize'
+gem 'mechanize', '>= 2.7.4'
 
 # Gem for xlsx creation
 gem 'acts_as_xlsx'
 gem 'axlsx'
 
 # code syntax highlighter
-gem 'codemirror-rails'
+gem 'codemirror-rails', '>= 5.1'
 
 # our test suite
-gem "rspec-rails", :group => [:test, :development]
+gem "rspec-rails", ">= 3.2.2", :group => [:test, :development]
 group :test do
-  gem "factory_girl_rails"
-  gem "capybara"
-  gem "guard-rspec"
+  gem "factory_girl_rails", ">= 4.6.0"
+  gem "capybara", ">= 2.5.0"
+  gem "guard-rspec", ">= 4.5.1"
   gem 'database_cleaner'
   gem 'faker'
 end
@@ -103,7 +103,7 @@ gem 'rubocop'
 # optimize queries
 gem "bullet", :group => "development"
 
-gem 'public_activity'
+gem 'public_activity', '>= 1.4.3'
 
 # Used to tail log files
 gem 'file-tail'
@@ -112,4 +112,4 @@ gem 'file-tail'
 gem 'draper', '~> 1.3'
 
 # foreman helper
-gem 'foreman'
+gem 'foreman', '>= 0.86.0'
