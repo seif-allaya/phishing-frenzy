@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.7'
+gem 'rails', '7.1.5.2'
 
 gem 'mysql2'
 gem 'sass-rails'
@@ -18,7 +18,7 @@ gem 'protected_attributes'
 gem 'devise'
 
 # For login tracking
-gem 'paper_trail', '>= 3.0.0.rc2'
+gem 'paper_trail', '>= 10.3.1'
 
 # For background work (sending emails)
 gem 'sidekiq'
@@ -103,7 +103,7 @@ gem 'rubocop'
 # optimize queries
 gem "bullet", :group => "development"
 
-gem 'public_activity'
+gem 'public_activity', '>= 1.4.3'
 
 # Used to tail log files
 gem 'file-tail'
